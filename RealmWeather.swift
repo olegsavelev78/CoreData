@@ -11,7 +11,6 @@ class PersistanceRealm2 {
         try! realm.write {
             realm.add(array)
         }
-        print(array)
     }
 
 }

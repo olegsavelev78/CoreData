@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tKi-ZN-m1N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNb-NF-JuC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Todo Core Data View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TodoCoreDataViewController" customModule="CoreData2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreData2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,6 +49,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zJY-N4-fHC"/>
                     <connections>
                         <outlet property="nameTextfield" destination="4td-eB-Jeu" id="L49-i1-bwQ"/>
                         <outlet property="secondNameTextfield" destination="87W-ch-tdV" id="UHJ-Pb-Dfh"/>
@@ -58,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="8.7053571428571423"/>
         </scene>
-        <!--Realm View Controller-->
+        <!--Item-->
         <scene sceneID="BQ6-K2-dzM">
             <objects>
                 <viewController id="Heu-Ie-c8y" customClass="RealmViewController" customModule="CoreData2" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H52-vl-yD9">
-                                <rect key="frame" x="0.0" y="59" width="414" height="741"/>
+                                <rect key="frame" x="0.0" y="59" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="JGF-I2-dLs" customClass="RealmTableViewCell" customModule="CoreData2" customModuleProvider="target">
@@ -116,7 +117,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy2-UR-Qyb">
-                                <rect key="frame" x="131" y="807" width="152" height="35"/>
+                                <rect key="frame" x="131" y="758" width="152" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Добавить задачу">
                                     <color key="titleColor" red="0.0" green="0.58791272700963437" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,6 +138,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g4z-T2-KMp"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="61P-EX-K42"/>
                     <connections>
                         <outlet property="toDoListTableView" destination="H52-vl-yD9" id="cfw-Pk-1K3"/>
                     </connections>
@@ -145,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="745.3125"/>
         </scene>
-        <!--Todo Core Data View Controller-->
+        <!--Item-->
         <scene sceneID="ZVL-tv-isV">
             <objects>
                 <viewController id="pEI-mB-tcV" customClass="TodoCoreDataViewController" customModule="CoreData2" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +156,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-hj-0lU">
-                                <rect key="frame" x="0.0" y="59" width="414" height="741"/>
+                                <rect key="frame" x="0.0" y="59" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" id="D3s-Ut-eW7" customClass="DataCoreTableViewCell" customModule="CoreData2" customModuleProvider="target">
@@ -172,7 +174,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD7-C2-fRu">
-                                <rect key="frame" x="131" y="807" width="152" height="35"/>
+                                <rect key="frame" x="131" y="758" width="152" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Добавить задачу">
                                     <color key="titleColor" red="0.0" green="0.58791272699999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -193,6 +195,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qrj-wU-6wC"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="e8H-jZ-OA6"/>
                     <connections>
                         <outlet property="todoTableView" destination="lEf-hj-0lU" id="dxu-nz-PP6"/>
                     </connections>
@@ -201,7 +204,7 @@
             </objects>
             <point key="canvasLocation" x="106" y="1457"/>
         </scene>
-        <!--Weather View Controller-->
+        <!--Item-->
         <scene sceneID="CjK-5P-xWf">
             <objects>
                 <viewController id="tKi-ZN-m1N" customClass="WeatherViewController" customModule="CoreData2" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,6 +290,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fIa-LB-Z1b"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ZHc-cQ-37Y"/>
                     <connections>
                         <outlet property="cityNameLabel" destination="P9U-aR-haB" id="qW9-Xf-PrV"/>
                         <outlet property="tableView" destination="Dtm-qT-DLu" id="PcV-wR-F5c"/>
@@ -295,7 +299,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwC-1K-Dhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105.79710144927537" y="2247.3214285714284"/>
+            <point key="canvasLocation" x="106" y="2257"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dBs-6B-lOC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CNb-NF-JuC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UIX-Gd-oB1">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Uk4-RR-IhA"/>
+                        <segue destination="Heu-Ie-c8y" kind="relationship" relationship="viewControllers" id="EiY-w5-Ha2"/>
+                        <segue destination="pEI-mB-tcV" kind="relationship" relationship="viewControllers" id="lnp-qH-2yB"/>
+                        <segue destination="tKi-ZN-m1N" kind="relationship" relationship="viewControllers" id="gaW-4W-eCQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APh-Tu-goJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1335" y="745"/>
         </scene>
     </scenes>
     <resources>

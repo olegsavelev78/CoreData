@@ -116,7 +116,6 @@ extension TodoCoreDataViewController: UITableViewDelegate, UITableViewDataSource
             
 
             let saveAction = UIAlertAction(title: "Сохранить", style: .default) { action in
-//                let newTask = Task(context: self.context)
                 let newTask = textField2.text!
                 do{
                     self.arraytasks = try self.context.fetch(Task.fetchRequest())
